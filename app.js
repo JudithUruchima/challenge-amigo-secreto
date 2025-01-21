@@ -60,6 +60,8 @@ function sortearAmigo() {
     if (lista.length != 0) {
         let indiceRandom = Math.floor(Math.random() * (lista.length)); //No incluye el length
         //console.log(indiceRandom);
+        elementoHTML = asignarId('listaAmigos');
+        elementoHTML.innerHTML = '';
         elementoHTML = asignarId('resultado');
         return elementoHTML.innerHTML = `El amigo secreto sorteado es: ${lista[indiceRandom]}`;
     } else {
