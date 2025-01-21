@@ -1,2 +1,2 @@
-<h1>Chanllegue Amigo Secreto</h1>
-<p>Subir el archivo finalizado del Chanllenge propuesto por Alura Latam en el programa ONE.</p>
+<h1>Challenge Amigo Secreto</h1>
+<p>Subir el archivo finalizado del Challenge propuesto por Alura Latam en el programa ONE.</p>
