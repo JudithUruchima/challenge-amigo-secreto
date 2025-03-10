@@ -36,13 +36,15 @@ function mostrarLista(lista) {
     for (let index = 0; index < lista.length; index++) {
         let item = document.createElement('li');   // Crear un nuevo elemento <li>
         item.textContent = lista[index]; // Asignar el texto del amigo
-        elementoHTML.appendChild(item); // Agregar el <li> a la <ul>
+        elementoHTML.appendChild(item); // Agregar el <li> a la <ul> lista no ordenada
     }
 }
 
 
 function limpiarCajaTexto() {
     asignarId('amigo').value = '';
+    asignarId('amigo').focus(); //Para que erl cursor ya este en la caja de texto del input
+
 }
 
 function verificarVacio() {
@@ -61,8 +63,8 @@ function sortearAmigo() {
         let indiceRandom = Math.floor(Math.random() * (lista.length)); //No incluye el length
         //console.log(indiceRandom);
         elementoHTML = asignarId('listaAmigos');
-        elementoHTML.innerHTML = '';
-        elementoHTML = asignarId('resultado');
+        elementoHTML.innerHTML = ''; //Limpia la interfaz y solo setea la de resultado
+        elementoHTML = asignarId('resultado'); //asigna al otro
         return elementoHTML.innerHTML = `El amigo secreto sorteado es: ${lista[indiceRandom]}`;
     } else {
         alert('Necesita agregar amigos, o será que no tiene, pipipi');
